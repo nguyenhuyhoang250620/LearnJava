@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6F8"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notestitle"
+        android:text="Keeps Note"
+        android:textSize="30dp"
+        android:paddingVertical="10dp"
+        android:background="#F3E1E1"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerview"
+        android:layout_above="@id/addnewnotebtn"
+        android:layout_below="@id/notestitle"/>
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="+"
+        android:layout_margin="30dp"
+        android:textSize="40dp"
+        android:id="@+id/addnewnotebtn"
+        android:textColor="#00B0FF"
+        android:backgroundTint="#F3E1E1"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>
