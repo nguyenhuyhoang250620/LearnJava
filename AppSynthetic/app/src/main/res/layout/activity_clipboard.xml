@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="30dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLipboard"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:layout_marginTop="60dp"
+        android:id="@+id/edt_coppy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Coppy"
+        android:padding="20dp"/>
+    <Button
+        android:id="@+id/btn_coppy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Coppy"/>
+    <EditText
+        android:layout_marginTop="60dp"
+        android:id="@+id/edt_paste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Paste"
+        android:padding="20dp"/>
+    <Button
+        android:id="@+id/btn_paste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paste"/>
+</LinearLayout>
